@@ -1,0 +1,98 @@
+/* Add this to your global CSS file */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background: #1e1e1e;
+  color: #00ff00;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.terminal-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  background: #1e1e1e;
+}
+
+.terminal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background: #333;
+  padding: 10px;
+}
+
+.buttons {
+  display: flex;
+  gap: 5px;
+}
+
+.button {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #ff5f56;
+  /* Red button */
+}
+
+.button.yellow {
+  background: #ffbd2e;
+  /* Yellow button */
+}
+
+.button.green {
+  background: #27c93f;
+  /* Green button */
+}
+
+.terminal-body {
+  width: 100%;
+  padding: 20px;
+  white-space: pre;
+  /* Ensure preformatted text is displayed correctly */
+  overflow: auto;
+  /* Ensure content is scrollable if it overflows */
+}
+
+pre {
+  margin: 0;
+  width: 100%;
+  white-space: pre-wrap;
+  /* Ensure preformatted text wraps correctly */
+}
+
+code {
+  display: block;
+  white-space: pre-wrap;
+  /* Ensure preformatted text wraps correctly */
+}
+
+.input-line {
+  display: flex;
+  align-items: center;
+}
+
+.terminal-input {
+  background: #1e1e1e;
+  color: #00ff00;
+  border: none;
+  outline: none;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 14px;
+  width: auto;
+  flex-grow: 1;
+}
+
+/* .terminal-input:focus {
+  width: 100%;
+  font-family: monospace;
+  outline: none;
+  border-bottom: 2px solid #00ff00;
+  caret-color: #00ff00;
+  animation: cubic-bezier(0.55, 0.055, 0.675, 0.19) 1s step-end infinite;
+} */
